@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hoja de sala: Introducción a las traducciones</title>
+  
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Georgia', serif;
+      color: #000000;
+      line-height: 1.7;
+      margin: 0;
+      padding: 6rem 12%;
+      font-size: 0.75rem;
+    }
+
+    h1 {
+      font-size: 0.75rem;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 3rem;
+      line-height: 1.3;
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin-top: 3rem;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
+    em {
+      font-style: italic;
+      display: block;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    .vertical-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 0.75rem;
+      margin: 2rem 0;
+    }
+
+    .volver {
+      display: block;
+      margin-bottom: 3rem;
+      text-align: left;
+      font-size: 0.7rem;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .volver:hover {
+      text-decoration: underline;
+    }
+
+    blockquote {
+      border-left: 3px solid #000000;
+      padding-left: 1rem;
+      color: #333333;
+      font-style: italic;
+      margin: 2rem 0;
+      font-size: 0.75rem;
+    }
+
+    .composicion {
+      position: relative;
+    }
+
+    .dibujo-fondo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -10%);
+  width: 480px;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.enlace-dibujo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -10%);
+  width: 480px;
+  height: 480px;
+  z-index: 2;
+  text-decoration: none;
+}
+
+
+    .enlace-dibujo:hover {
+      cursor: pointer;
+    }
+
+    .contenido-texto {
+      position: relative;
+      z-index: 1;
+    }
+    .dibujo-corazon {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 400px;
+  opacity: 0.85;
+  z-index: 0;
+}
+
+.enlace-corazon {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 400px;
+  height: 400px;
+  z-index: 2;
+
+}.dibujo-poema {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 350px;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.enlace-poema {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 350px;
+  height: 350px;
+  z-index: 2;
+  text-decoration: none;
+}
+
+.dibujo-tatuaje {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  width: 350px;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+
+.enlace-tatuaje {
+  position: absolute;
+  top: 5%;
+  left: 60%;
+  width: 350px;
+  height: 350px;
+  z-index: 2;
+  text-decoration: none;
+}
+.dibujo-diario {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  width: 200px;
+  opacity: 0.85;
+  z-index: 0;
+}
+
+.enlace-diario {
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  text-decoration: none;
+}
+.hover-text {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #000;
+}
+
+div:hover .hover-text {
+  opacity: 1;
+}
+.enlace-hover {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.enlace-hover:hover {
+  color: #ff0066;
+  text-decoration: underline;
+}
+
+  </style>
+
+</head>
+<body>
+
+
+  <a href="index.html" class="volver">← Volver al índice del archivo</a>
+
+  <div class="composicion">
+
+
+
+    <!-- ENLACE invisible sobre dibujo tatuaje -->
+   <a href="tatuaje.html" class="enlace-tatuaje" aria-label="Ir al texto Tatuaje 1"></a>
+   <img src="img/tatuaje_dibujo.png" class="dibujo-tatuaje" alt="Dibujo tatuaje">
+
+   <!-- ENLACE invisible sobre nuevo dibujo -->
+   <a href="poemaruido.html" class="enlace-poema" aria-label="Ir al texto Lo que es para mí un poema"></a>
+   <img src="img/poemaruido.png" class="dibujo-poema" alt="Dibujo poema ruido">
+
+    <!-- ENLACE del corazón -->
+    <a href="corazon.html" class="enlace-corazon" aria-label="Ir al texto El corazón"></a>
+   <img src="img/corazon_dibujo.png" class="dibujo-corazon" alt="Corazón dibujo">
+  
+
+    <!-- ENLACE invisible sobre el dibujo -->
+    <a href="manual.html" class="enlace-dibujo" aria-label="Ir al texto del Manual de convivencia"></a>
+
+    <!-- DIBUJO -->
+    <img src="img/garabato_limpio.png" class="dibujo-fondo" alt="Garabato fondo">
+
+    <a href="referenciasartisticas.html">Ver referencias artísticas</a>
+
+    <!-- TEXTO -->
+    <div class="contenido-texto">
+      <h1>Hoja de sala: Introducción a las traducciones</h1>
+
+      <div style="position: relative; width: 180px; margin: 2rem auto;">
+        <a href="diariodeimagenes.html"
+           aria-label="Ir al Diario de Imágenes"
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; text-decoration: none;"></a>
+        <img src="img/dibujo_diariodeimagenes.png"
+             alt="Dibujo Diario de Imágenes"
+             style="position: relative; width: 100%; opacity: 0.75; display: block; z-index: 1;">
+        <div class="hover-text">Ver diario</div>
+      </div>
+      
+      <a href="queescuchas.html" class="enlace-hover">ver </a>
+
+      <p><a href="jugandocongato.html">ver jugando con gato</a></p>
+
+      <p><a href="puesteexplico.html">ver puesteexplico</a></p>
+
+      <a href="reja.html">Ver proyecto: Reja</a>
+
+      
+
+
+      
+
+      <h2>Apuntes de un proceso</h2>
+
+      <p>Si <strong>empiezo</strong> <em>tejiendo</em> un telar, me evoca a cuando encontré <strong>patrones</strong> de las alfombras del patio de Andrea. Cómo dibuja ella sobre el propio suelo dibujado. Yo me estoy fijando en la puerta que cierra nuestra terraza. Es <em>fría</em> y hace <strong>ruido</strong> al cerrar. Comparo los elementos, y los balaustres y sus hilos se parecen bastante.</p>
+
+      <p class="vertical-text">Lo que hay aquí aparece inconscientemente por la necesidad de corresponder al amor.</p>
+
+      <p>También en la excusa de hablar de mis <strong>amigues</strong>. ¿Qué es lo que dicen elles? ¿Qué es lo que digo yo?</p>
+
+      <p><strong>Yo aquí traduzco:</strong></p>
+
+      <a href="comoestaminiñe.html">¿Cómo está mi niñe?</a>
+      <a href="referencia.html">referencias</a>
+
+
+
+      
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
